@@ -82,25 +82,29 @@
                                     <li><a href="#">Clubs</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Webdroid</a></li>
+                                                <li><a href="Webdroids.html">Webdroid</a></li>
                                                 
                                             </ul>
                                              <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Mechatronics</a></li>
+                                                <li><a href="Mechatronics.html">Mechatronics</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Elektra</a></li>
+                                                <li><a href="Elektra.html">Elektra</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Management</a></li>
+                                                <li><a href="Management.html">Management</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Media and Creative</a></li>
+                                                <li><a href="Media.html">Media and Creative</a></li>
+                                                
+                                            </ul>	
+											<ul class="single-mega cn-col-5">
+                                                <li><a href="Hackers_cult.html">Hacker's cult</a></li>
                                                 
                                             </ul>
 										</div>
                                     </li>
-									<li><a href="OOficial_teams.html">Official Teams</a></li>
+									<li><a href="Official_teams.html">Official Teams</a></li>
 									<li><a href="blog.html">Blogs</a></li>
 									<li><a href="events.html">Events</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
@@ -124,132 +128,164 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-
-
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg)">
+	
+	
+	<div class="breadcumb-area bg-img" style="height: 300px; background-image: url(img/pro-img/project.gif)">
+	
         <div class="bradcumbContent">
-            <h2>Club name</h2>
+            <h2>Projects</h2>
         </div>
     </div>
-    <!-- ##### Breadcumb Area End ##### -->
-
-    <!-- ##### Elements Area Start ##### -->
-    <section class="elements-area mt-50 section-padding-100-0">
-        <div class="container">
-            <div class="row">
-
-                
-                <!-- ========== Progress Bars & Accordions ========== -->
+	<br>
+	<br><br><br>
+ <!-- ##### Tabs ##### -->
+			<div class="container">
+ 
                 <div class="col-12">
-                    <div class="elements-title mb-50">
-                        <span>The Best</span>
-                        <h2>HTML</h2>
-                    </div>
-                </div>
-
-                <!-- ##### Accordians ##### -->
-                <div class="col-12 col-lg-6">
-                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Intro Duction to HTML.
-                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                    </a></h6>
-                            <div id="collapseOne" class="accordion-content collapse show">
-                               <p> 
-							   HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html. Our HTML tutorial is developed for beginners and professionals.
-<br>
-The major points of HTML are given below:<br>
-HTML stands for Hyper Text Markup Language.<br>
-HTML is used to create web pages.<br>
-HTML is widely used language on the web.<br>
-We can create static website by HTML only.</p>
-							   </div>
-                        </div>
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">What Is HTML?
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        </a>
-                            </h6>
-                            <div id="collapseTwo" class="accordion-content collapse">
-                                <p>HTML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is Markup Language?<br>
-
-Hyper Text: Hyper Text simply means "Text within Text". A text has a link within it, is a hypertext. Every time when you click on a word which brings you to a new webpage, you have clicked on a hypertext.
-<br>
-Markup language: A markup language is a programming language that is used make text more interactive and dynamic. It can turn a text into images, tables, links etc.
-<br>
-An HTML document is made of many HTML tags and each HTML tag contains different content.</p>
-								</div>
-                        </div>
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Pharetr a quis nunc sit amet, maximus vehicula nibh.
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                    </a>
-                            </h6>
-                            <div id="collapseThree" class="accordion-content collapse">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate id justo quis facilisis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- ##### Tabs ##### -->
-                <div class="col-12 col-lg-6">
                     <div class="academy-tabs-content">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Morbi vel arcu</a>
+                                <a class="nav-link active" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Mechatronics</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Sed faucibus</a>
+                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Webdroid</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Sed faucibus mau</a>
+                                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Elektra</a>
                             </li>
+							<li><a href="addproject.php"><button type="button" class="btn academy-btn mt-30">Add Project</button></a>
+							</li>
                         </ul>
 
                         <div class="tab-content mb-100" id="myTabContent">
-                            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
                                 <div class="academy-tab-content">
                                     <!-- Tab Text -->
-                                    <div class="academy-tab-text">
-                                        <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
-                                    </div>
-                                </div>
+                                    <div class="row">
+									<?php
+									include("connection.php");
+ 
+
+									$sql = "SELECT * FROM project where department='Mechatronics'";
+									if($result = mysqli_query($conn, $sql)){
+									if(mysqli_num_rows($result) > 0)
+									{
+									while($row = mysqli_fetch_array($result)){
+									?>
+									
+									
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="upload/<?php echo $row['img_name']?>" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text"><h4><?php echo $row['name']?></h4></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      
+                    </div>
+                    <small class="text-muted"><?php echo  $row['department'] ?></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+									<?php
+											}
+									  mysqli_free_result($result);
+									} 			else{
+													echo "No records matching your query were found.";
+												}
+												} else{
+												echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+												}
+												
+									?>
+			
+			                    </div>
                             </div>
-                            <div class="tab-pane fade show active" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+							</div>
+							
+							
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
                                 <div class="academy-tab-content">
                                     <!-- Tab Text -->
                                     <div class="academy-tab-text">
-                                        <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
-                                    </div>
+               		<?php
+									include("connection.php");
+ 
+
+									$sql = "SELECT * FROM project where department='Webdroid'";
+									if($result = mysqli_query($conn, $sql)){
+									if(mysqli_num_rows($result) > 0)
+									{
+									while($row = mysqli_fetch_array($result)){
+									?>
+									
+									
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="upload/<?php echo $row['img_name']?>" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text"><h4><?php echo $row['name']?></h4></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      
+                    </div>
+                    <small class="text-muted"><?php echo  $row['department'] ?></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+									<?php
+											}
+									  mysqli_free_result($result);
+									} 			else{
+													echo "No records matching your query were found.";
+												}
+												} else{
+												echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+												}
+												
+									?>
+			
+			                    </div>
+                            </div>
+							</div>
+							
+									   
+									   </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
                                 <div class="academy-tab-content">
                                     <!-- Tab Text -->
                                     <div class="academy-tab-text">
-                                        <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
-                                    </div>
+                                       <h4>No Current Project Detail</h4>
+									   </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-               
-    
-
-</html> <!-- ##### Footer Area Start ##### -->
+	
+			</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</html> <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="main-footer-area section-padding-100-0">
             <div class="container">
@@ -355,3 +391,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>.STIC 
 </body>
 
 </html>
+

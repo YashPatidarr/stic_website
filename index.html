@@ -16,9 +16,31 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <script src="content/bootstrapJS/jquery-2.1.1.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+ 
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 <script type="text/javascript">
-    
+     $(window).on('load',function(){
+    $('#myModal').modal('show');
+});
+
 </script>
+ <script>function formatAMPM() { var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+}
+                           </script>
 </head>
 <body>
     <!-- ##### Preloader ##### -->
@@ -40,9 +62,10 @@
 <a style= href="index.html"> <h1>STIC<img src="img/core-img/logo.png" alt="STIC" style="width:170px;height:80px;"></h1></a>
                             
 							</div>
-                            <div class="login-content">
-                                <a href="#">Register / Login</a>
-                            </div>
+                            <div class="login-content" id='d'>
+							<script>
+							document.getElementById("d").innerHTML = formatAMPM();</script>
+                               </div>
                         </div>
                     </div>
                 </div>
@@ -72,7 +95,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Projects</a>
+                                    <li><a href="Projects.html">Projects</a>
                                       <!--  <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="about-us.html">About Us</a></li>
@@ -85,27 +108,31 @@
                                     <li><a href="#">Clubs</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Webdroid</a></li>
+                                                <li><a href="Webdroids.html">Webdroid</a></li>
                                                 
                                             </ul>
                                              <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Mechatronics</a></li>
+                                                <li><a href="Mecha.html">Mechatronics</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Elektra</a></li>
+                                                <li><a href="Elektra.html">Elektra</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Management</a></li>
+                                                <li><a href="Management.html">Management</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Media and Creative</a></li>
+                                                <li><a href="Media.html">Media and Creative</a></li>
+                                                
+                                            </ul>	
+											<ul class="single-mega cn-col-5">
+                                                <li><a href="Hackers_cult.html">Hacker's cult</a></li>
                                                 
                                             </ul>
 										</div>
                                     </li>
-									<li><a href="about-us.html">Official Teams</a></li>
+									<li><a href="Official_teams.html">Official Teams</a></li>
 									<li><a href="blog.html">Blogs</a></li>
-									<li><a href="about-us.html">Events</a></li>
+									<li><a href="events.html">Events</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
 									
                                     
@@ -133,12 +160,12 @@
         <div class="hero-slides owl-carousel">
 
             <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bgstic.gif);">
+            <div class="single-hero-slide" style="background-image: url(img/bg-img/try3.gif);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12" class="top-left">
-                            <h3  style="color:rgb(0, 0, 255);" text-align='top-left'>Medi-Caps University, Indore</h3>
-                             <h1 style="color:rgb(0, 0, 255);" text-align='top-left'>STUDENTS' TECHNICAL AND INNOVATION CLUB</h1>    
+                            <h3  style="color:white;" text-align='top-left'>Medi-Caps University, Indore</h3>
+                             <h1 style="color:white;" text-align='top-left'>STUDENT'S TECHNICAL AND INNOVATION CLUB</h1>    
                               </div>
                         </div>
                     </div>
@@ -211,19 +238,7 @@
             </div>
             <div class="row">
                
-                <!-- Single Top Popular Course -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="popular-course-content">
-                            <h5>Mechatronics</h5>
-                            <span>By Mechanical Department</span>
-                            
-                            <p>The interdisciplinary club of STIC is a community of candidates who gain pleasure in tinkering with machines.</p>
-                            <a href="elements.html" class="btn academy-btn btn-sm">See More</a>
-                        </div>
-                        <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/Mechatronics-Graphic.png);"></div>
-                    </div>
-                </div>
+                
                 
                 <!-- Single Top Popular Course -->
                 <div class="col-12 col-lg-6">
@@ -233,7 +248,7 @@
                             <span>By Computer Science And IT Department</span>
                             
                             <p>WEBDROID, is the club of STIC devoted entirely for computer engineering and its sub fields.</p>
-                            <a href="elements.html" class="btn academy-btn btn-sm">See More</a>
+                            <a href="Webdroids.html" class="btn academy-btn btn-sm">See More</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/web1.png);"></div>
                     </div>
@@ -246,9 +261,22 @@
                             <span>By Electrical Department</span>
                            
                             <p>Our aim is to provide guidance and exposure of electricity,and electromagnetism to its members so that they are ramp ready to face and beat their competition.</p>
-                            <a href="elements.html" class="btn academy-btn btn-sm">See More</a>
+                            <a href="Elektra.html" class="btn academy-btn btn-sm">See More</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/electra.png);"></div>
+                    </div>
+                </div>
+				<!-- Single Top Popular Course -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="popular-course-content">
+                            <h5>Mechatronics</h5>
+                            <span>By Mechanical Department</span>
+                            
+                            <p>The interdisciplinary club of STIC is a community of candidates who gain pleasure in tinkering with machines.</p>
+                            <a href="Mechatronics.html" class="btn academy-btn btn-sm">See More</a>
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/Mecha.png);"></div>
                     </div>
                 </div>
                 <!-- Single Top Popular Course -->
@@ -258,12 +286,25 @@
                             <h5>Management</h5>
                             <span>By Management Department</span>
                             
-                            <p>As far as management goes , we include management of various events under STIC banner , their proper execution , sponsorship and funding of various projects and events as planned.</p><a href="elements.html" class="btn academy-btn btn-sm">See More</a>
+                            <p>As far as management goes , we include management of various events under STIC banner , their proper execution , sponsorship and funding of various projects and events as planned.</p>
+							<a href="Management.html" class="btn academy-btn btn-sm">See More</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/mgmt.png );"></div>
                     </div>
                 </div>
-                
+                <!-- Single Top Popular Course -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="popular-course-content">
+                            <h5>Hacker's Cult</h5>
+                            <span>By CS-IT Department</span>
+                            
+                            <p>As far as management goes , we include management of various events under STIC banner , their proper execution , sponsorship and funding of various projects and events as planned.</p>
+							<a href="Hackers_cult.html" class="btn academy-btn btn-sm">See More</a>
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/hacker.png);"></div>
+                    </div>
+                </div>
                 <!-- Single Top Popular Course -->
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
@@ -272,7 +313,7 @@
                             <span></span>
                            
                             <p>M&C team’s main goal would be to act as a projector of STIC’s activities throughout the year and increasing the influence radius of STIC in campus as well as outside it.</p>
-                            <a href="elements.html" class="btn academy-btn btn-sm">See More</a>
+                            <a href="Media.html" class="btn academy-btn btn-sm">See More</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/social-media-advertising.png);"></div>
                     </div>
@@ -406,9 +447,38 @@
     <!-- ##### CTA Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
+	<div id="myModal" class="modal fade in" role="dialog" style="display: block; padding-right: 12px;"><a href="https://www.ted.com/tedx/events/29582">
+  </a>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style='background color="green"'>
+	  <h2 class='modal-title' >Update</h2>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        
+      </div>
+      </a><div class="modal-body">
+		<!--<img src="img/bg-img/asha.png"><hr>-->
+		<h3>The Students' Technical and Innovation Club, Medi-Caps University cordially invites you to the Orientation Programme 2018-19.</h3>
+<br><br>
+				Special Guest: Mr. Mudit Thakkar (Founder and CEO at Edo Square, Alumni MITM)<br>
+Date: 31 October 2018<br>
+Venue: Small Auditorium <br>
+Time: 3PM onwards</p>
+
+           <!-- <button type="button" class="btn academy-btn btn-lg" align='center'>Apply For The Program</button>-->
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn academy-btn btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+ </div>
+</div>
     <footer class="footer-area">
         <div class="main-footer-area section-padding-100-0">
-            <div class="container">
+            
                 <div class="row">
                     <!-- Footer Widget Area -->
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -480,7 +550,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
         <div class="bottom-footer-area">
             <div class="container">
                 <div class="row">

@@ -16,15 +16,13 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+<script type="text/javascript">
+    
+</script>
 </head>
-
 <body>
     <!-- ##### Preloader ##### -->
-    <div id="preloader">
-        <i class="circle-preloader"></i>
-    </div>
-
+    
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
 
@@ -39,7 +37,9 @@
 <a style= href="index.html"> <h1>STIC<img src="img/core-img/logo.png" alt="STIC" style="width:170px;height:80px;"></h1></a>
                             
 							</div>
-                           
+                            <div class="login-content">
+                                <a href="#"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="Projects.html">Projects</a>
+                                    <li><a href="Projects.php">Projects</a>
                                       <!--  <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="about-us.html">About Us</a></li>
@@ -82,27 +82,31 @@
                                     <li><a href="#">Clubs</a>
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Webdroid</a></li>
+                                                <li><a href="Webdroids.html">Webdroid</a></li>
                                                 
                                             </ul>
                                              <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Mechatronics</a></li>
+                                                <li><a href="Mecha.html">Mechatronics</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Elektra</a></li>
+                                                <li><a href="Elektra.html">Elektra</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Management</a></li>
+                                                <li><a href="Management.html">Management</a></li>
                                                 
                                             </ul> <ul class="single-mega cn-col-5">
-                                                <li><a href="#">Media and Creative</a></li>
+                                                <li><a href="Media.html">Media and Creative</a></li>
+                                                
+                                            </ul>	
+											<ul class="single-mega cn-col-5">
+                                                <li><a href="Hackers_cult.html">Hacker's cult</a></li>
                                                 
                                             </ul>
 										</div>
                                     </li>
-									<li><a href="OOficial_teams.html">Official Teams</a></li>
-									<li><a href="blog.html">Blogs</a></li>
-									<li><a href="events.html">Events</a></li>
+									<li><a href="Official_teams.html">Official Teams</a></li>
+									<li><a href="blog.php">Blogs</a></li>
+									<li><a href="events.php">Events</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
 									
                                     
@@ -124,132 +128,68 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-
-
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg)">
+	<!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/blog.jpg)">
         <div class="bradcumbContent">
-            <h2>Club name</h2>
+            <h2>Blog</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
-
-    <!-- ##### Elements Area Start ##### -->
-    <section class="elements-area mt-50 section-padding-100-0">
-        <div class="container">
-            <div class="row">
-
-                
-                <!-- ========== Progress Bars & Accordions ========== -->
-                <div class="col-12">
-                    <div class="elements-title mb-50">
-                        <span>The Best</span>
-                        <h2>HTML</h2>
-                    </div>
+	<br><br><br><br><br><br>
+	<div class="container">
+	
+	<div class="tab-content mb-100" id="myTabContent">
+    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+    <div class="academy-tab-content">
+	<div class="row">
+	<?php
+									include("connection.php");
+								     $head=$_GET['head'];
+									$sql = "SELECT * FROM blog where m_heading ='".$head."";
+									if($result = mysqli_query($conn, $sql)){
+									if(mysqli_num_rows($result) > 0)
+									{
+									while($row = mysqli_fetch_array($result)){
+									?>
+	
+            <div class="col-md-12">
+              <div class="card mb-12 box-shadow">
+                <div class="card-body">
+                  <p class="card-text"><h1><?php echo $row['m_heading']?></h1></p>
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						<p> posted on <?php echo $row['date']?> by<?php echo $row['writer']?></p><br>
+						<h3> <?php echo $row['sb_heading']?></h3>
+						<br>
+						<hr>
+						<h5><?php echo $row['det']?></h5>
+						</div>
+						
+					</div>
                 </div>
-
-                <!-- ##### Accordians ##### -->
-                <div class="col-12 col-lg-6">
-                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Intro Duction to HTML.
-                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                    </a></h6>
-                            <div id="collapseOne" class="accordion-content collapse show">
-                               <p> 
-							   HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of html. Our HTML tutorial is developed for beginners and professionals.
-<br>
-The major points of HTML are given below:<br>
-HTML stands for Hyper Text Markup Language.<br>
-HTML is used to create web pages.<br>
-HTML is widely used language on the web.<br>
-We can create static website by HTML only.</p>
-							   </div>
-                        </div>
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">What Is HTML?
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        </a>
-                            </h6>
-                            <div id="collapseTwo" class="accordion-content collapse">
-                                <p>HTML is an acronym which stands for Hyper Text Markup Language. Let's see what is Hyper Text and what is Markup Language?<br>
-
-Hyper Text: Hyper Text simply means "Text within Text". A text has a link within it, is a hypertext. Every time when you click on a word which brings you to a new webpage, you have clicked on a hypertext.
-<br>
-Markup language: A markup language is a programming language that is used make text more interactive and dynamic. It can turn a text into images, tables, links etc.
-<br>
-An HTML document is made of many HTML tags and each HTML tag contains different content.</p>
-								</div>
-                        </div>
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Pharetr a quis nunc sit amet, maximus vehicula nibh.
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                    </a>
-                            </h6>
-                            <div id="collapseThree" class="accordion-content collapse">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate id justo quis facilisis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- ##### Tabs ##### -->
-                <div class="col-12 col-lg-6">
-                    <div class="academy-tabs-content">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Morbi vel arcu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Sed faucibus</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Sed faucibus mau</a>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content mb-100" id="myTabContent">
-                            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
-                                <div class="academy-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="academy-tab-text">
-                                        <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show active" id="tab2" role="tabpanel" aria-labelledby="tab--2">
-                                <div class="academy-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="academy-tab-text">
-                                        <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
-                                <div class="academy-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="academy-tab-text">
-                                        <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               
-    
-
-</html> <!-- ##### Footer Area Start ##### -->
+              </div>
+            </div>
+			
+			
+			<?php
+											}
+									  mysqli_free_result($result);
+									} 			else{
+													echo "No records matching your query were found.";
+												}
+												} else{
+												echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+												}
+												
+									?>
+			
+			
+			
+	</div>
+    </div>
+    </div>	
+<br><br><br><br><br><br>	
+	 <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="main-footer-area section-padding-100-0">
             <div class="container">
@@ -330,7 +270,7 @@ An HTML document is made of many HTML tags and each HTML tag contains different 
                 <div class="row">
                     <div class="col-12">
                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script>.STIC All rights reserved | This Website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Yash
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>.STIC All rights reserved | This Website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Yash, Shubhi & Udit
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
@@ -355,3 +295,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>.STIC 
 </body>
 
 </html>
+	
